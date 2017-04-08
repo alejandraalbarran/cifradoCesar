@@ -1,10 +1,7 @@
 #include <iostream> 
-#include <string.h> 
-<<<<<<< HEAD
+#include <string.h>
 #include <fstream>
-=======
 
->>>>>>> f5d43fd869ee01a27b6684f79a5a4b473dca61d8
 using namespace std; 
  
 class cesar
@@ -46,7 +43,6 @@ class cesar
 		    }
 		    this->texto=cadena;
 		}
-<<<<<<< HEAD
 		
 		void setDescodifica(int n, string & cadena){ 
     		setCodifica(-n, cadena); 
@@ -101,5 +97,42 @@ int main()
 	    	Texto.setCodifica(-n, cadena);
 	    	cout << Texto.getTexto() << endl;
 	    	system ("pause");
-=======
->>>>>>> f5d43fd869ee01a27b6684f79a5a4b473dca61d8
+	    	
+	    	 myfile.open("archivo", ios::trunc);
+	    	 myfile << Texto.getTexto();
+	    	 myfile.close();
+		}
+		if(opc==2){
+			cout << "Este es el texto codificado\n" << endl; 
+			ifstream archivoo ("archivo");
+		    string tex;
+		    while(getline(archivoo,tex)){
+		    	cout << tex << endl;
+			} 
+			archivoo.clear();
+			archivoo.seekg (0, ios::beg);
+			fflush(stdin);
+			cout << "\nComiense a Decodificar:\n" << endl; 
+		    cout << "Introduce el numero de desplazamiento deseado" << endl; 
+		    cin >> n;
+		    while(getline(archivoo,tex)){
+		    	Texto.setDescodifica(-n, tex);
+				cout << Texto.getTexto() << endl;
+				system ("pause");
+			}
+			
+		    archivoo.close();
+	}
+	           if(opc==3){
+					system("cls");
+					return 0;
+					system("pause");
+				 }
+				
+	
+	 
+	  } while(opc!='3');
+       
+       system("PAUSE");
+      
+}
