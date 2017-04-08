@@ -89,8 +89,7 @@ int main()
 		    	if (cadena[x]>96 && cadena[x]<123){
 		    		cadena[x]=cadena[x]-32;
 				}
-			}
-				    	
+			}	    	
 	    	cout << "Ingrese el numero de desplazamiento deseado" << endl; 
 	    	cin >> n;
 	    	Texto.setNum(n);
