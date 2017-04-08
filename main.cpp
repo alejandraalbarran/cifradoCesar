@@ -42,13 +42,4 @@ class cesar
 		    }
 		    this->texto=cadena;
 		}
-		
-		void setDescodifica(int n, string & cadena){ 
-    		setCodifica(-n, cadena); 
-		}
-		
 
-	private:
-		int num;
-		string texto;		
-};
