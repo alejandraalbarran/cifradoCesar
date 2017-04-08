@@ -1,6 +1,10 @@
 #include <iostream> 
 #include <string.h> 
+<<<<<<< HEAD
 #include <fstream>
+=======
+
+>>>>>>> f5d43fd869ee01a27b6684f79a5a4b473dca61d8
 using namespace std; 
  
 class cesar
@@ -42,6 +46,7 @@ class cesar
 		    }
 		    this->texto=cadena;
 		}
+<<<<<<< HEAD
 		
 		void setDescodifica(int n, string & cadena){ 
     		setCodifica(-n, cadena); 
@@ -96,3 +101,5 @@ int main()
 	    	Texto.setCodifica(-n, cadena);
 	    	cout << Texto.getTexto() << endl;
 	    	system ("pause");
+=======
+>>>>>>> f5d43fd869ee01a27b6684f79a5a4b473dca61d8
