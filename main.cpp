@@ -42,4 +42,3 @@ class cesar
 		    }
 		    this->texto=cadena;
 		}
-
